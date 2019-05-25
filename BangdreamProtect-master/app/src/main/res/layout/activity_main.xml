@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 뱅드림 화면보호기 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:background="#404040">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon" />
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="뱅드림 화면보호기"
+            android:textSize="30sp"
+            android:textColor="#ffffff"/>
+        <ImageButton
+            android:id="@+id/setting"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/setting" />
+
+    </LinearLayout>
+    <!-- 정보 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0e0e0"
+            android:gravity="center"
+            android:text="정보"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <!-- 프로세스 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="15dp"
+                android:text="프로세스"
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="It has not run."
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nope" />
+
+    </LinearLayout>
+    <!-- 서비스 권한 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="서비스 권한"
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="Running in the background."
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nope" />
+
+    </LinearLayout>
+    <!-- 감지된 게임 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="감지된 게임"
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15sp"
+                android:text="Korea server"
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10sp"
+                android:text="Japan server"
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/korea" />
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="70dp"
+                android:src="@drawable/japan" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 오버레이 권한 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="오버레이 권한"
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:text="Verify overlay permissions."
+                android:textColor="#5e5e5e"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:src="@drawable/nope" />
+
+    </LinearLayout>
+    <!-- 버튼 -->
+    <Button
+        android:id="@+id/execution"
+        android:layout_width="340dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250sp"
+        android:text="실행"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
